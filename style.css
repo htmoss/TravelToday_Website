@@ -1,0 +1,170 @@
+:root{
+  --background-gradient: rgba(19, 22, 12, 0.4);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-reg{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#home{
+  background: rgba(19, 22, 12, 0.8);
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+
+.container{
+  display: flex;
+}
+
+main{
+  display: flex;
+}
+
+/* NAVBAR */
+
+header{
+  height: 100vh;
+  width: 7rem;
+  background-color: rgba(19, 22, 12, 0.8)
+}
+
+.navbar-left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-left{
+  height: 80%;
+  max-height: 700px;
+  min-height: 450px;
+  /* border: 1px white solid; */
+}
+
+#navbar ul{
+  height: inherit;
+  justify-content: space-evenly !important;
+  /* border: 1px black solid; */
+}
+
+#navbar > li{
+  list-style: none;
+}
+
+#navbar li i{
+  margin: .3rem 0;
+  transition: transform .5s ease-out, background .5s ease-in;
+}
+
+#navbar li i:hover{
+  transform: scale(1.2);
+}
+
+#navbar li i:active{
+  color: #333;
+  background: rgba(230, 230, 230, 0.9);;
+}
+
+#navbar a{
+  text-decoration: none;
+}
+
+/* MAIN */
+
+main{
+  width: 100%;
+  justify-content: flex-start;
+}
+
+
+#home::before {
+  content: '';
+  background: url(./img/outdoors.jpeg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left-sect,
+.right-sect{
+  width: 50%;
+  height: 80%;
+  margin: 0 2rem;
+  /* border: 1px #fff dotted; */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.search-icon{
+  top: 3px;
+  position: relative;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.search-icon:hover{
+  transform: rotate(45deg);
+}
+
+.back-gradient{
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-gradient);
+  position: fixed;
+  z-index: -1;
+}
+
+/* FOOTER */
+footer{
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(19, 22, 12, 1);
+  color: #ddd;
+  font-size: .8rem;
+  
+}
+
+
+
+
+
+/* GENERAL UTILITIES */
+.btn{
+  padding: 1rem;
+  background: rgba(129, 129, 129, 0.9);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.btn-invert{
+  color: #333;
+  background: rgba(230, 230, 230, 0.9);;
+}
+
